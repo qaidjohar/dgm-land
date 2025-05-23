@@ -1,0 +1,17 @@
+<svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#440BD4" />
+      <stop offset="50%" stop-color="#E92EFB" />
+      <stop offset="100%" stop-color="#FF2079" />
+    </linearGradient>
+  </defs>
+  <path d="M80 10L120 40V70L80 40V10Z" fill="url(#logo-gradient)" />
+  <path d="M40 40L80 70V100L40 70V40Z" fill="url(#logo-gradient)" />
+  <path d="M80 70L120 100V130L80 100V70Z" fill="url(#logo-gradient)" />
+  <path d="M40 100L80 130V150L40 120V100Z" fill="url(#logo-gradient)" />
+  <path d="M80 10L40 40V70L80 40V10Z" fill="url(#logo-gradient)" />
+  <path d="M120 40L80 70V100L120 70V40Z" fill="url(#logo-gradient)" />
+  <path d="M40 70L80 100V130L40 100V70Z" fill="url(#logo-gradient)" />
+  <path d="M120 100L80 130V150L120 120V100Z" fill="url(#logo-gradient)" />
+</svg>

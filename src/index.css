@@ -1,3 +1,159 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --midnight: #04005E;
+  --retrowave: #440BD4;
+  --flamingo: #E92EFB;
+  --deathray: #FF2079;
+  --black: #24272A;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    @apply bg-blackish text-white font-rubik;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    @apply overflow-x-hidden text-base md:text-lg;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-bold;
+  }
+  
+  h1 {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+  
+  h3 {
+    @apply text-xl sm:text-2xl md:text-3xl;
+  }
+  
+  p {
+    @apply font-normal leading-relaxed;
+  }
+  
+  section {
+    @apply py-12 md:py-16 lg:py-24 overflow-hidden;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 md:px-8;
+  }
+  
+  .button-primary {
+    @apply px-4 sm:px-6 py-3 bg-gradient-to-r from-retrowave via-flamingo to-deathray text-white font-medium rounded-lg hover:shadow-neon-pink transition-all duration-300 hover:scale-105 min-w-[120px] sm:min-w-[140px] text-center touch-manipulation;
+  }
+  
+  .button-secondary {
+    @apply px-4 sm:px-6 py-3 bg-transparent border-2 border-retrowave text-white font-medium rounded-lg hover:shadow-neon-purple hover:bg-retrowave/10 transition-all duration-300 hover:scale-105 min-w-[120px] sm:min-w-[140px] text-center touch-manipulation;
+  }
+  
+  .section-title {
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-12 text-center;
+  }
+  
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-flamingo to-deathray;
+  }
+  
+  .feature-card {
+    @apply bg-blackish/70 backdrop-blur-md border border-retrowave/20 rounded-xl p-4 sm:p-6 hover:border-flamingo/50 transition-all duration-300 hover:-translate-y-1;
+  }
+  
+  .neon-glow {
+    box-shadow: 0 0 5px theme('colors.flamingo'), 0 0 20px theme('colors.flamingo/50');
+  }
+  
+  .grid-pattern {
+    background-size: 50px 50px;
+    background-image: linear-gradient(to right, theme('colors.retrowave/10') 1px, transparent 1px),
+                     linear-gradient(to bottom, theme('colors.retrowave/10') 1px, transparent 1px);
+  }
+}
+
+/* Custom animations */
+.floating-element {
+  animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Scroll reveal effects */
+.reveal {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.6s ease-in, transform 0.8s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0) !important;
+}
+
+.reveal-bottom {
+  transform: translateY(50px);
+}
+
+.reveal-left {
+  transform: translateX(-50px);
+}
+
+.reveal-right {
+  transform: translateX(50px);
+}
+
+/* Glass effect */
+.glass-effect {
+  backdrop-filter: blur(8px);
+  background-color: rgba(68, 11, 212, 0.1);
+  border: 1px solid rgba(233, 46, 251, 0.2);
+}
+
+/* Gradient background animation */
+.gradient-animation {
+  background: linear-gradient(-45deg, #04005E, #440BD4, #E92EFB, #FF2079);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .feature-card {
+    @apply touch-manipulation;
+  }
+  
+  .button-primary,
+  .button-secondary {
+    @apply min-h-[44px];
+  }
+}
