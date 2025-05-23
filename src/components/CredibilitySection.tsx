@@ -11,13 +11,13 @@ const CredibilitySection: React.FC = () => {
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: "Active in 40+ countries",
+      title: "Active in 3+ regions",
       description: "Global infrastructure with localized deployment capability"
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Enterprise Clients",
-      description: "Red Bull, McDonald's, Samsung, Ubisoft, and more"
+      title: "Modular & White-Label by Design",
+      description: "Plug-and-play infrastructure built to match your brand, your market, your gamers. Customizable, scalable, and fully owned by you."
     },
     {
       icon: <Award className="w-8 h-8" />,

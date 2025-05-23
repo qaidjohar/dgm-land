@@ -5,16 +5,16 @@ import { Mail, MapPin, ExternalLink } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const footerLinks = [
-    { title: "Platform", links: ["Features", "Pricing", "Security", "API"] },
-    { title: "Company", links: ["About", "Careers", "Press", "Blog"] },
-    { title: "Resources", links: ["Documentation", "Support", "Developers", "Partners"] },
-    { title: "Legal", links: ["Privacy Policy", "Terms of Service", "Cookies"] },
+    // { title: "Platform", links: ["Features", "Pricing", "Security", "API"] },
+    // { title: "Company", links: ["About", "Careers", "Press", "Blog"] },
+    // { title: "Resources", links: ["Documentation", "Support", "Developers", "Partners"] },
+    // { title: "Legal", links: ["Privacy Policy", "Terms of Service", "Cookies"] },
   ];
   
   const offices = [
     { city: "Singapore", address: "Singapore Central" },
-    { city: "Kuala Lumpur", address: "KL, Malaysia" },
-    { city: "Manila", address: "Manila, Philippines" },
+    // { city: "Kuala Lumpur", address: "KL, Malaysia" },
+    // { city: "Manila", address: "Manila, Philippines" },
   ];
 
   return (
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
           </div>
           
           {/* Quick links */}
-          {footerLinks.map((column, index) => (
+          {/* {footerLinks.map((column, index) => (
             <div key={index}>
               <h4 className="text-white font-medium mb-4">{column.title}</h4>
               <ul className="space-y-2">
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
                 ))}
               </ul>
             </div>
-          ))}
+          ))} */}
         </div>
         
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
