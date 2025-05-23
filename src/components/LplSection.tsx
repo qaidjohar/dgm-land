@@ -44,7 +44,7 @@ const LplSection: React.FC = () => {
               />
             </div>
             <p className="text-lg text-gray-300 mb-6">
-              Let's Play Live is the face of Dynasty to millions of gamers worldwide — delivering tournaments, content, and broadcast infrastructure across 40+ countries.
+              Let's Play Live is the face of Dynasty to millions of gamers worldwide — delivering tournaments, content, and broadcast infrastructure across 3+ regions.
             </p>
             <p className="text-lg text-gray-300 mb-8">
               As our premier consumer-facing brand, LPL showcases the capabilities of our white-label platform in action.
@@ -127,15 +127,15 @@ const LplSection: React.FC = () => {
             
             <div className="grid grid-cols-3 gap-4 mt-4">
               <div className="text-center">
-                <div className="text-[#00FF66] text-2xl font-bold">40+</div>
-                <div className="text-sm text-gray-400">Countries</div>
+                <div className="text-[#00FF66] text-2xl font-bold">3+</div>
+                <div className="text-sm text-gray-400">Regions</div>
               </div>
               <div className="text-center">
-                <div className="text-[#00FF66] text-2xl font-bold">5M+</div>
-                <div className="text-sm text-gray-400">Monthly Users</div>
+                <div className="text-[#00FF66] text-2xl font-bold">1M+</div>
+                <div className="text-sm text-gray-400">Gamers Engaged</div>
               </div>
               <div className="text-center">
-                <div className="text-[#00FF66] text-2xl font-bold">2K+</div>
+                <div className="text-[#00FF66] text-2xl font-bold">10+</div>
                 <div className="text-sm text-gray-400">Events Yearly</div>
               </div>
             </div>
