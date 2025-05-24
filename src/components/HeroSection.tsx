@@ -52,20 +52,26 @@ const HeroSection: React.FC = () => {
               Dynasty Gaming & Media delivers the world's most comprehensive white-label gaming ecosystem.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <motion.button 
+              <motion.a 
+                href="https://calendly.com/baldev-dynastygm/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="button-primary"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
                 Request a Demo
-              </motion.button>
-              <motion.button 
+              </motion.a>
+              <motion.a 
+                href="https://gg.letsplay.live"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="button-secondary"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
                 Explore Our Platform
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
           
