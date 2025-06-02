@@ -39,15 +39,15 @@ const LplSection: React.FC = () => {
               <div className="absolute inset-0 bg-[#00FF66]/20 blur-[25px] group-hover:blur-[35px] transition-all duration-300"></div>
               <img 
                 src="/images/letsplaylive-logo.png" 
-                alt="Let's Play Live"
+                alt="letsplaylive"
                 className="h-24 w-auto relative z-10 group-hover:scale-105 transition-transform duration-300"
               />
             </div>
             <p className="text-lg text-gray-300 mb-6">
-              Let's Play Live is the face of Dynasty to millions of gamers worldwide — delivering tournaments, content, and broadcast infrastructure across 3+ regions.
+              letsplaylive is the face of Dynasty to millions of gamers worldwide — delivering tournaments, content, and broadcast infrastructure across 3+ regions.
             </p>
             <p className="text-lg text-gray-300 mb-8">
-              As our premier consumer-facing brand, LPL showcases the capabilities of our white-label platform in action.
+              As our premier consumer-facing brand, letsplaylive showcases the capabilities of our white-label platform in action.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
