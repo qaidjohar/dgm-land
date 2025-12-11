@@ -32,12 +32,12 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 mb-6 max-w-md">
               Dynasty Gaming & Media delivers the world's most comprehensive white-label gaming ecosystem, powering esports infrastructure across the globe.
             </p>
-            {/* <div className="flex items-center mb-4">
+            <div className="flex items-center mb-4">
               <Mail size={18} className="text-flamingo mr-2" />
-              <a href="mailto:info@dynastygm.com" className="text-gray-300 hover:text-flamingo transition-colors">
-                info@dynastygm.com
+              <a href="mailto:admin@dynastygm.com" className="text-gray-300 hover:text-flamingo transition-colors">
+                admin@dynastygm.com
               </a>
-            </div> */}
+            </div>
             <div className="flex items-center mb-4">
               <ExternalLink size={18} className="text-flamingo mr-2" />
               <a href="https://www.dynastygm.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-flamingo transition-colors">
